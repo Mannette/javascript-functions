@@ -2,8 +2,8 @@ console.log ("Problem 1");
 function sum (num1, num2) {
   return num1 + num2
 };
-console.log( sum(5, 6) );
-console.log( sum(120, 200) );
+sum(5, 6);
+sum(120, 200);
 
 console.log ("Problem 2");
 function isEqual (x, y) {
@@ -13,8 +13,8 @@ function isEqual (x, y) {
     return (false)
   }
 };
-console.log( isEqual(5, 5) );
-console.log( isEqual(107, 68) );
+isEqual(5, 5);
+isEqual(107, 68);
 
 console.log("Problem 3");
 function discountPercentage (Original, Discount) {
@@ -30,10 +30,15 @@ console.log();
 
 console.log("Problem 4");
 function stringCapitalize(str) {
-
+var str = ("lets do this!")
+str.slice(1)
 }
 
 console.log("Problem 5");
-function evenNumbers(math.random(0, 100)) {
-  for (x = 0; x < evenNumbers; )
+function evenNumbers(random){
+  var random = Math.random () * 100-0;
+  for (x = 0; x < random; x += 2){
+    console.log(x);
+  }
 }
+evenNumbers();

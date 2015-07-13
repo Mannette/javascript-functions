@@ -18,10 +18,22 @@ console.log( isEqual(107, 68) );
 
 console.log("Problem 3");
 function discountPercentage (Original, Discount) {
-  var total = (Discount * Original)
+  var total = (Original * Discount)
+  return total
   if (total > 100) {
-    return ("Warning! Discount over 100%! Not possible, please try again!");
+    console.log("Warning! Discount over 100%! Not possible, please try again!");
   } else if (total < 0) {
-    return ("Warning! Discount under 0%! Not possible, please try again!");
+    console.log("Warning! Discount under 0%! Not possible, please try again!");
     }
 };
+console.log();
+
+console.log("Problem 4");
+function stringCapitalize(str) {
+
+}
+
+console.log("Problem 5");
+function evenNumbers(math.random(0, 100)) {
+  for (x = 0; x < evenNumbers; )
+}

@@ -18,21 +18,25 @@ isEqual(107, 68);
 
 console.log("Problem 3");
 function discountPercentage (Original, Discount) {
-  var total = (Original * Discount)
-  return total
-  if (total > 100) {
-    console.log("Warning! Discount over 100%! Not possible, please try again!");
-  } else if (total < 0) {
-    console.log("Warning! Discount under 0%! Not possible, please try again!");
-    }
+  //var total = (Original * Discount);
+  //var discountTotal = (Original - total);
+  if ( (Discount > 1) || (Discount < 0) ) {
+    return ("Warning!! Discount must be between 0% and 100%! Try again!");
+  };
+  else { return (Original * Discount)
+  };
 };
-console.log();
+discountPercentage(100, .5)
 
 console.log("Problem 4");
 function stringCapitalize(str) {
-var str = ("lets do this!")
-str.slice(1)
+  //return str.split(" ")
+  /*---- Better way to do this that will work
+  more universally? ----*/
+  return (
+str.charAt(0).toUpperCase() + str.substring(1, 4) + " " + str.charAt(5).toUpperCase() + str.substring(6, 7) + " " + str.charAt(8).toUpperCase() + str.substring(9, 12));
 }
+stringCapitalize("lets do this!");
 
 console.log("Problem 5");
 function evenNumbers(random){

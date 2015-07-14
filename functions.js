@@ -41,7 +41,7 @@ stringCapitalize("lets do this!");
 console.log("Problem 5");
 function evenNumbers(random){
   var random = Math.random () * 100-0;
-  for (x = 0; x < random; x += 2){
+  for (x = 0; x < random; x += 2) {
     console.log(x);
   }
 }
@@ -58,6 +58,15 @@ isDivisible(600, 30)
 isDivisible(523, 2)
 
 console.log("Problem 7");
-function oddNumbers(argument) {
-  // body...
+function oddNumbers(random) {
+  var random = Math.round(Math.random() * 100 - 0)
+  for (x = 1; random < 40; x += 2) {
+    while (x % 2 != 0) {
+      console.log(x);
+    }
+  }
+  else (x = 40; random > 40; x += 2) {
+    console.log()
+  }
 }
+oddNumbers();

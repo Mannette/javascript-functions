@@ -46,3 +46,13 @@ function evenNumbers(random){
   }
 }
 evenNumbers();
+
+console.log("Problem 6");
+function isDivisible(number1, number2) {
+  if (number1 % number2 === 0) {
+    return (true)
+  }
+  else { return (false) };
+};
+isDivisible(600, 30)
+isDivisible(523, 2)

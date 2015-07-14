@@ -58,15 +58,25 @@ isDivisible(600, 30)
 isDivisible(523, 2)
 
 console.log("Problem 7");
-function oddNumbers(random) {
-  var random = Math.round(Math.random() * 100 - 0)
-  for (x = 1; random < 40; x += 2) {
-    while (x % 2 != 0) {
-      console.log(x);
-    }
-  }
-  else (x = 40; random > 40; x += 2) {
-    console.log()
-  }
+function oddNumbers() {
+  console.log('running');
+  var random = Math.round(Math.random() * 100 - 0);
+  if (random < 40 ) {
+  for (var x = 0; x <= 40; x++) {
+  //  while (x < 40) {
+      if (x % 2 == 1) {
+        console.log(x);
+      }
+    //}
+  };
+} else {
+  for (x = 100; x > 40; x--) {
+  //  while (x < 100) {
+      if (x % 2 == 1) {
+        console.log(x);
+      }
+    //}
+  };
 }
+};
 oddNumbers();
